@@ -5,21 +5,21 @@
 class Aish < Formula
   desc "AI-powered shell assistant"
   homepage "https://github.com/vklimontovich/aish"
-  version "0.5.6"
+  version "0.5.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/vklimontovich/aish/releases/download/v0.5.6/aish_0.5.6_darwin_amd64.tar.gz"
-      sha256 "c808e2b4b1514ddef5d98b5fab9a0cccdd47205789cbf620feb8e1a07418d95b"
+      url "https://github.com/vklimontovich/aish/releases/download/v0.5.7/aish_0.5.7_darwin_amd64.tar.gz"
+      sha256 "ce3b3f9487e0522617d8d3c2b4ecd2fb34ed9ec7053a430c3357a185de22f901"
 
       def install
         bin.install "aish"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/vklimontovich/aish/releases/download/v0.5.6/aish_0.5.6_darwin_arm64.tar.gz"
-      sha256 "61927520249694cb1345cecc867593ff99ca49e0c936fa26b729969b89bc432d"
+      url "https://github.com/vklimontovich/aish/releases/download/v0.5.7/aish_0.5.7_darwin_arm64.tar.gz"
+      sha256 "2d55b480595bea2c537f0a03ba1d126ef745d1398008aaf89aaf7437f4dc91b3"
 
       def install
         bin.install "aish"
@@ -30,8 +30,8 @@ class Aish < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vklimontovich/aish/releases/download/v0.5.6/aish_0.5.6_linux_amd64.tar.gz"
-        sha256 "7f614460d731e25dac071fa3c6f167e42c75d4d83adaeb7d898213a3a605e19f"
+        url "https://github.com/vklimontovich/aish/releases/download/v0.5.7/aish_0.5.7_linux_amd64.tar.gz"
+        sha256 "433c0ee95f2400157e5ecb1cfe9d6574d84333087e3e5c3a9ce4b6610f3a28b1"
 
         def install
           bin.install "aish"
@@ -40,8 +40,8 @@ class Aish < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vklimontovich/aish/releases/download/v0.5.6/aish_0.5.6_linux_arm64.tar.gz"
-        sha256 "87524efea29bad7d8b51b5b97ad23c04525e03740d1db051d14d94cd5ef028dd"
+        url "https://github.com/vklimontovich/aish/releases/download/v0.5.7/aish_0.5.7_linux_arm64.tar.gz"
+        sha256 "af11d063260a3b1667ef492843ec068e4243479382fcd78db3f378615e80a71d"
 
         def install
           bin.install "aish"
