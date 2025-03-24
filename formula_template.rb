@@ -1,4 +1,4 @@
-class AishAT{{VERSION_NO_DOTS}} < Formula
+class Aish{{VERSION_NO_DOTS}} < Formula
   desc "AI Shell – natural language CLI for your terminal"
   homepage "https://github.com/vklimontovich/aish"
   version "{{VERSION}}"
